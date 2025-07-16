@@ -3,7 +3,7 @@ name: React CI/CD
 on:
   push:
     branches:
-      - mster
+      - master
 
 jobs:
   build:
