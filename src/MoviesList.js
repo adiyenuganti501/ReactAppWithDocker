@@ -36,7 +36,7 @@ const MoviesList = ({ movies }) => {
 
                     return (
                         <div key={index} className="movies_body">
-                            <a onClick={() => (openModal())} >     <img src={list.Poster} /> </a>
+                         <img src={list.Poster} /> 
                             <h3>{list.Title}</h3>
                             <h4>{list.Year}</h4>
                             <h5>{list.Type}</h5>
