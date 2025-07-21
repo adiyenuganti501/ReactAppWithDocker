@@ -69,7 +69,8 @@ const Movies = () => {
                         <p>{error}</p>  
             {showloader ? <div className="spinner"><Spinner animation="border" /> </div> : <MoviesList movies={movies} />}
 
-            <JsonUsers/>
+
+    
                
         </React.Fragment>
     )
