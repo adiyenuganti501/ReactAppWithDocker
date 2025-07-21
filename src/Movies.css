@@ -1,0 +1,42 @@
+.wrapper_body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+   
+    color:whitesmoke;
+    margin: 20px;
+    background-color :royalblue;
+    grid-auto-rows:minmax(80px,auto) ;
+    grid-gap: 40px;
+    align-items: center;
+    border-radius: 5px;;
+}
+
+
+.app_name{
+ margin-left: 10px;
+}
+.search_box{
+
+    color: red;
+    background-color: white;
+    grid-auto-rows: minmax(30px,auto);
+  
+    margin-right: 50px;
+    border-radius: 5px;
+    
+}
+ 
+input[type=text]{
+
+    height: 25px;
+
+}
+
+p{
+    text-align: center;
+    color: red;
+}
+.spinner{
+    text-align: center;
+    color:royalblue;
+}
