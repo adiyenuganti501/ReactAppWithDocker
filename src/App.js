@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 //import './App.css';
 import React ,{useState} from 'react';
-import {BrowserRouter as Router ,Route, Routes } from "react-router-dom" ;
+//import {BrowserRouter as Router ,Route, Routes } from "react-router-dom" ;
 import MainTodo from './MainTodo';
 import Movies from './Movies';
 import 'bootstrap/dist/css/bootstrap.min.css';
