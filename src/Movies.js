@@ -52,7 +52,7 @@ const Movies = () => {
         <React.Fragment>
             <div className="wrapper_body">
                 <div className="app_name">
-                    <h2>Movies Searching App</h2>
+                    <h2>Movies Search App</h2>
                 </div>
 
                 <div className="search_box">
