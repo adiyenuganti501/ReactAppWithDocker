@@ -2,9 +2,9 @@ name: React CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -25,5 +25,6 @@ jobs:
 
     - name: Build application
       run: npm run build
+
     - name: Build application
       run: echo "end of Pipeline"
