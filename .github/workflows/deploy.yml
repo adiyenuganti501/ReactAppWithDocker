@@ -25,6 +25,15 @@ jobs:
 
     - name: Build application
       run: CI=false npm run build
+      
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build Docker image
+      run: docker build -t reactfordevops:latest .
+
+    - name: Run Docker container (sanity check)
+      run: docker run -d -p 3000:80 reactfordevops:latest
 
     - name: Build application
-      run: echo "end of Pipeline"
+      run:  echo "Docker build completed successfully ✅"
