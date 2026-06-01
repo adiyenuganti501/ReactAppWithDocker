@@ -6,7 +6,7 @@ import MainTodo from './MainTodo';
 import Movies from './Movies';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-//import FoodOrder from './FoodOrder';
+//import FoodOrder from './FoodOrder'; /
 // import NavBar from './NavBar'
 // import Gallery from './Gallery';
 // import FormValidation from './FormValidation'
