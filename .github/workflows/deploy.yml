@@ -58,7 +58,7 @@ jobs:
       # 9️⃣ Tag Docker image for ECR
     - name: Tag Docker image
       run: |
-       docker tag test-repo:${IMAGE_TAG} 432447180954.dkr.ecr.ap-south-1.amazonaws.com/test-repo:${IMAGE_TAG}
+       docker tag test-repo:${IMAGE_TAG} 941905483977.dkr.ecr.ap-south-1.amazonaws.com/test-repo:${IMAGE_TAG}
  
     - name: Push Docker image to ECR
       run: |
