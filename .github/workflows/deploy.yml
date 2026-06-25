@@ -52,19 +52,19 @@ jobs:
         docker build -t $ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REPOSITORY:$IMAGE_TAG
 
-    # # 7️⃣ (Optional) Deploy to EKS
-    # - name: Update kubeconfig
-    #   run: |
-    #     aws eks update-kubeconfig --region $AWS_REGION --name k8s-practice
+    # 7️⃣ (Optional) Deploy to EKS
+    - name: Update kubeconfig
+      run: |
+        aws eks update-kubeconfig --region $AWS_REGION --name k8s-practice
 
-    # - name: Deploy to Kubernetes
-    #   run: |
-    #     kubectl set image deployment/nginx-deployment nginx=$ECR_REPOSITORY:$IMAGE_TAG || \
-    #     kubectl apply -f deployment.yaml
+    - name: Deploy to Kubernetes
+      run: |
+        kubectl set image deployment/nginx-deployment nginx=$ECR_REPOSITORY:$IMAGE_TAG || \
+        kubectl apply -f deployment.yaml
 
-    # - name: Verify rollout
-    #   run: kubectl rollout status deployment/nginx-deployment
+    - name: Verify rollout
+      run: kubectl rollout status deployment/nginx-deployment
 
-    # 8️⃣ Done
+    8️⃣ Done
     - name: Pipeline finished
       run: echo "🚀 CI/CD completed successfully"
